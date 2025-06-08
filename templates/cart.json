@@ -1,0 +1,18 @@
+{
+  "sections": {
+    "main-cart-items": {
+      "type": "main-cart-items",
+      "settings": {}
+    },
+    "cart-progress-bar": {
+      "type": "cart-progress-bar",
+      "settings": {
+        "goal": 50
+      }
+    }
+  },
+  "order": [
+    "cart-progress-bar",
+    "main-cart-items"
+  ]
+}

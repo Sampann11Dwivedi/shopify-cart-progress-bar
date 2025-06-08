@@ -1,0 +1,24 @@
+<!-- sections/cart-progress-bar.liquid -->
+<div id="cart-progress-wrapper" style="position:sticky; bottom:0; width:100%; background:#f9f9f9; padding:10px; z-index:999; box-shadow:0 -1px 4px rgba(0,0,0,0.1);">
+  <div style="max-width: 800px; margin: 0 auto;">
+    <div id="cart-progress-message" style="margin-bottom:5px; font-size:14px; text-align:center;"></div>
+    <div style="background:#ddd; border-radius:999px; overflow:hidden; height:10px;">
+      <div id="cart-progress-fill" style="background:#00b894; height:100%; width:0%; transition:width 0.4s ease;"></div>
+    </div>
+    <div id="cart-discount-code" style="display:none; margin-top:5px; text-align:center;">
+      <span style="font-size:14px;">Use code <strong>FREESHIP</strong> at checkout</span>
+      <button onclick="navigator.clipboard.writeText('FREESHIP')" style="margin-left:10px; padding:3px 8px; font-size:13px; cursor:pointer;">Copy</button>
+    </div>
+  </div>
+</div>
+
+<script src="{{ 'cart-progress-bar.js' | asset_url }}" defer></script>
+
+{% schema %}
+{
+  "name": "Cart Progress Bar",
+  "tag": "section",
+  "class": "cart-progress-section",
+  "settings": []
+}
+{% endschema %}
